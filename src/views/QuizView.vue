@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <quiz @quiz-completed="handleQuizCompleted" :key="quizKey" />
-        <custom-modal v-show="showModal" header="FINAL SCORE"
+        <custom-modal v-show="showModal" header="Final Score"
             :score="score" @reload="updateQuiz" @close="showModal = false" />
     </div>
 </template>

@@ -88,7 +88,7 @@ export default {
 
         },
         deleteTutorial() {
-            DataService.delete(this.currentHisto.key)
+            DataService.delete(this.currentHisto.userID, this.currentHisto.key)
                 .then(() => {
                     this.$emit("refreshList");
                 })
